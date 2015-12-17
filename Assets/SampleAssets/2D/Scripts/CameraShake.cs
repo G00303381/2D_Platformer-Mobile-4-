@@ -32,9 +32,14 @@ public class CameraShake : MonoBehaviour {
         {
             float offsetX = Random.value * shakeAmount * 2 - shakeAmount;
             float offsetY = Random.value * shakeAmount * 2 - shakeAmount;
+<<<<<<< HEAD
             camPos.x = offsetX;
             camPos.y = offsetY;
             camPos.z = 0f;
+=======
+            camPos.x += offsetX;
+            camPos.y += offsetY;
+>>>>>>> 0db89a7ca14b477499e546f8631dd33dab1c22e5
 
             mainCam.transform.position = camPos;
         }

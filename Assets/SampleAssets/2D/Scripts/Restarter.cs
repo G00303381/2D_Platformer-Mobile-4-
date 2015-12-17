@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 using UnityEngine;
+=======
+﻿using UnityEngine;
+>>>>>>> 0db89a7ca14b477499e546f8631dd33dab1c22e5
 
 namespace UnitySampleAssets._2D
 {
@@ -10,4 +14,8 @@ namespace UnitySampleAssets._2D
                 Application.LoadLevel(Application.loadedLevelName);
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 0db89a7ca14b477499e546f8631dd33dab1c22e5

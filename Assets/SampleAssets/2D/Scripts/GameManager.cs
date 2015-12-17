@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour {
     public float spawnDelay = 2f;
     public Transform spawnParticle;
 
+<<<<<<< HEAD
     public CameraShake camShake;
 
 
@@ -19,6 +20,8 @@ public class GameManager : MonoBehaviour {
             Debug.Log("No cam shake found on game manager!");
         }
     }
+=======
+>>>>>>> 0db89a7ca14b477499e546f8631dd33dab1c22e5
     void Awake()
     {
         if (gm == null)
@@ -45,6 +48,7 @@ public class GameManager : MonoBehaviour {
 
     public static void KillEnemy(Enemy enemy)
     {
+<<<<<<< HEAD
         gm.EnemeyDeath(enemy);
     }
 
@@ -55,6 +59,9 @@ public class GameManager : MonoBehaviour {
         camShake.shake(enemy.shakeAmnt, enemy.shakeLength);
         Destroy(enemy.gameObject);
 
+=======
+        Destroy(enemy.gameObject);
+>>>>>>> 0db89a7ca14b477499e546f8631dd33dab1c22e5
     }
 
 }
