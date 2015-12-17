@@ -7,8 +7,20 @@ public class Player : MonoBehaviour
     [System.Serializable]
     public class PlayerStats
     {
-        public int Health = 100;
+        public int maxHealth = 100;
+        private int currHealth;
+        public int currentHealth
+        {
+            get { return currHealth; }
+            set { currHealth = Mathf.Clamp(value, 0, maxHealth); }
+        }
+
+        public void init()
+        {
+            currHealth = maxHealth;
+        }
     }
+
 
     public PlayerStats playerStats = new PlayerStats();
 
@@ -22,8 +34,8 @@ public class Player : MonoBehaviour
 
     public void DamagePlayer(int damage)
     {
-        playerStats.Health -= damage;
-        if (playerStats.Health <= 0)
+        playerStats.currentHealth -= damage;
+        if (playerStats.currentHealth <= 0)
         {
             GameManager.KillPlayer(this);
         }
